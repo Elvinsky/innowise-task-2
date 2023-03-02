@@ -169,7 +169,7 @@ ul {
 }
 
 .main-content h2,
-.recomended h2 {
+.recomended h2 h2 {
     font-size: 26px;
 }
 
@@ -183,8 +183,12 @@ ul {
 }
 
 .arrows {
-    margin-left : auto;
-    margin-right: 150px;
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    margin-left   : auto;
+    gap           : 10px;
+    margin-right  : 150px;
 }
 
 .main-content__first-line {
@@ -231,9 +235,40 @@ ul {
     display       : flex;
     flex-direction: row;
     gap           : 40px;
+    white-space   : nowrap;
 }
 
-.food-n-drinks {
+.food {
     display       : flex;
     flex-direction: column;
+    margin-top    : 50px;
+    gap           : 30px;
+}
+
+.food-header {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+    gap           : 20px;
+}
+
+.food-header span {
+    color    : #C2C2C2;
+    font-size: 16px;
+}
+
+.food-line {
+    display       : flex;
+    flex-direction: row;
+    gap           : 40px;
+    white-space   : nowrap;
+}
+
+.arrows__subbtn {
+    font-size       : 16px;
+    margin-right    : 40px;
+    border-radius   : 20px;
+    background-color: #FF0000;
+    color           : white;
+    padding         : 10px 20px 10px 20px
 }
