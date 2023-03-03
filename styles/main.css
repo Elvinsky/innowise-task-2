@@ -44,7 +44,7 @@ a {
     align-items   : center;
 }
 
-@media only screen and (max-width:450px) and (min-width:100px) {
+@media only screen and (max-width:550px) and (min-width:100px) {
     .searchbar {
         display: none;
     }
@@ -110,7 +110,7 @@ a {
 
 
 
-@media only screen and (min-width:450px) {
+@media only screen and (min-width:551px) {
     .searchbar {
         display: flex;
     }
