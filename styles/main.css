@@ -7,7 +7,7 @@
 
 :root {
     --standart-font  : 16px;
-    --secondary-color: var(--secondary-color)
+    --secondary-color: #C2C2C2
 }
 
 @font-face {
