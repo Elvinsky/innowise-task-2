@@ -5,6 +5,11 @@
     font-family   : sans-serif;
 }
 
+:root {
+    --standart-font  : 16px;
+    --secondary-color: var(--secondary-color)
+}
+
 @font-face {
     font-family: sans-serif;
     src        : url("./assets/fonts/muli.regular.ttf");
@@ -14,8 +19,6 @@
     footer {
         display: flex;
     }
-
-
 
     .searchbar {
         display: none;
@@ -28,6 +31,7 @@
 
     .searchbar-container {
         justify-content: center;
+        gap            : 140px;
     }
 
     .sidebar-container {
@@ -57,6 +61,9 @@
 
     .main-content__first-line {
         flex-direction: column;
+        align-items   : center;
+        gap           : 15px;
+        margin-right  : 30px;
     }
 
     .item img {
@@ -90,7 +97,7 @@
     }
 
     .mob-logo h1 {
-        font-size: 16px;
+        font-size: var(--standart-font);
     }
 
     .pc-banner {
@@ -110,6 +117,7 @@
         flex-direction : column;
         align-items    : start;
         justify-content: start;
+        margin-top     : 35px;
     }
 
     .recomended-channels {
@@ -185,6 +193,7 @@
 
     .mob-wrapper {
         padding-bottom: 170px;
+        padding-top   : 20px;
     }
 
     .player {
@@ -201,6 +210,15 @@
     .next-videos {
         align-items : flex-start;
         margin-right: 16px;
+    }
+
+    .options {
+        margin-left: auto;
+        gap        : 25px;
+    }
+
+    .recomended-line {
+        margin-top: 15px;
     }
 }
 
@@ -250,6 +268,8 @@
     }
 
     .main-content__first-line {
+        margin-right  : 20px;
+        gap           : 40px;
         flex-direction: row;
     }
 
@@ -278,6 +298,7 @@
         flex-direction : row;
         align-items    : center;
         justify-content: space-between;
+        margin-top     : 10px;
     }
 
     .recomended-channels {
@@ -314,6 +335,7 @@
     }
 
     .next-video__header {
+        display       : flex;
         flex-direction: row;
     }
 
@@ -323,6 +345,15 @@
 
     .player-caption {
         margin-left: 45px;
+    }
+
+    .options {
+        margin-left: 505px;
+        gap        : 50px;
+    }
+
+    .searchbar-container {
+        gap: 2em;
     }
 }
 
@@ -372,7 +403,6 @@ a {
 .searchbar-container {
     display       : flex;
     flex-direction: row;
-    gap           : 2em;
     align-items   : center;
     width         : fit-content;
 }
@@ -392,7 +422,7 @@ a {
 .searchbar p {
     font-family: sans-serif;
     margin-left: 2em;
-    font-size  : 16px;
+    font-size  : var(--standart-font);
 }
 
 .searchbar svg {
@@ -402,9 +432,7 @@ a {
 .options {
     display       : flex;
     flex-direction: row;
-    gap           : 50px;
     align-items   : center;
-    margin-left   : 505px;
     margin-right  : 70px;
 }
 
@@ -485,7 +513,7 @@ a {
 
 .settings {
     font-size     : 16px;
-    color         : #C2C2C2;
+    color         : var(--secondary-color);
     display       : flex;
     flex-direction: row;
     gap           : 20px;
@@ -525,15 +553,16 @@ a {
 }
 
 .main-content__first-line {
+    /* gap       : 40px; */
     margin-top: 30px;
     display   : flex;
-    gap       : 40px;
     overflow-y: hidden;
 }
 
 .item {
     display       : flex;
     flex-direction: column;
+    white-space   : nowrap;
 }
 
 .item img {
@@ -549,10 +578,11 @@ a {
     justify-content: space-between;
     display        : flex;
     flex-direction : row;
+    gap            : 10px;
 }
 
 .item-caption span {
-    color     : #C2C2C2;
+    color     : var(--secondary-color);
     font-size : 16px;
     margin-top: 4px;
 }
@@ -590,8 +620,8 @@ a {
 }
 
 .food-header span {
-    color    : #C2C2C2;
-    font-size: 16px;
+    color    : var(--secondary-color);
+    font-size: var(--standart-font);
 }
 
 .food-line {
@@ -627,7 +657,6 @@ a {
 
 .channel-header {
     font-weight: 700;
-    margin-top : 10px;
     display    : flex;
     gap        : 15px;
 }
@@ -648,7 +677,7 @@ a {
 
 .header-caption span:last-child {
     font-size: 13px;
-    color    : #C2C2C2;
+    color    : var(--secondary-color);
 }
 
 .channel-sub {
@@ -700,13 +729,13 @@ a {
 
 .video-caption p {
     font-weight: lighter;
-    font-size  : 16px;
+    font-size  : var(--standart-font);
 }
 
 .video-caption span {
     margin-top: 30px;
     font-size : 16px;
-    color     : #C2C2C2;
+    color     : var(--secondary-color);
 }
 
 .recomended-channels {
@@ -717,8 +746,8 @@ a {
 }
 
 .recomended-channels span {
-    color    : #C2C2C2;
-    font-size: 16px;
+    color    : var(--secondary-color);
+    font-size: var(--standart-font);
 }
 
 .recomendations {
@@ -857,7 +886,7 @@ a {
 }
 
 .player-caption div span {
-    color    : #C2C2C2;
+    color    : var(--secondary-color);
     font-size: 20px;
 }
 
@@ -868,20 +897,19 @@ a {
 }
 
 .button-item {
-    display            : flex;
-    flex-direction     : row;
-    align-items        : center;
-    gap                : 10px;
-    padding            : 10px;
-    background-color   : #EBEBEB;
-    border-radius      : 20px;
-    /* opacity         : 30%; */
-    border             : 0;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    gap             : 10px;
+    padding         : 10px;
+    background-color: #EBEBEB;
+    border-radius   : 20px;
+    border          : 0;
 }
 
 .button-item span {
     opacity  : 1;
-    font-size: 14px;
+    font-size: var(--standart-font);
     color    : black;
 }
 
@@ -909,7 +937,7 @@ a {
 }
 
 .description span {
-    color        : #C2C2C2;
+    color        : var(--secondary-color);
     font-size    : 16px;
     margin-bottom: 10px;
 }
@@ -926,7 +954,7 @@ a {
 }
 
 .sub-btn {
-    font-size          : 16px;
+    font-size          : var(--standart-font);
     /* margin-right    : 40px; */
     border-radius      : 20px;
     background-color   : #FF0000;
@@ -936,10 +964,10 @@ a {
 }
 
 .next-video__header {
-    justify-content: space-between;
-    align-items    : center;
-    display        : flex;
-    margin-bottom  : 20px;
+    justify-content   : space-between;
+    align-items       : center;
+    /* display        : flex; */
+    margin-bottom     : 20px;
 }
 
 .next-video__header span {
