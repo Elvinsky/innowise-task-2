@@ -651,6 +651,7 @@ a {
 
 .player-caption h2 {
     font-size: 36px;
+    fill     : black;
 }
 
 .player-caption div {
@@ -660,7 +661,6 @@ a {
 }
 
 .player-caption div span {
-    color    : #C2C2C2;
     font-size: 20px;
 }
 
@@ -677,15 +677,14 @@ a {
     align-items        : center;
     gap                : 8px;
     padding            : 10px;
-    background-color   : #EBEBEB;
+    background-color   : #3e3e3e;
     border-radius      : 20px;
-    /* opacity         : 30%; */
+    /* opacity         : 10%; */
     border             : 0;
 }
 
 .button-item span {
-    opacity: 1;
-    color  : black;
+    color: rgb(255, 255, 255);
 }
 
 .description-container {
@@ -745,6 +744,7 @@ a {
     justify-content: space-between;
     align-items    : center;
     margin-bottom  : 20px;
+    color          : white;
 }
 
 .next-video__header span {
@@ -752,14 +752,12 @@ a {
     line-height   : 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color         : #19202C;
 }
 
 .next-video__header h1 {
     font-size  : 36px;
     line-height: 45px;
 
-    color: #19202C;
 }
 
 .next-video__header div {
