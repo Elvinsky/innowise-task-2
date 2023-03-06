@@ -15,11 +15,7 @@
         display: flex;
     }
 
-    .body {
-        display       : flex;
-        flex-direction: column;
-        align-items   : center;
-    }
+
 
     .searchbar {
         display: none;
@@ -114,7 +110,6 @@
         flex-direction : column;
         align-items    : start;
         justify-content: start;
-        margin-top     : -50px;
     }
 
     .recomended-channels {
@@ -327,7 +322,7 @@
     }
 
     .player-caption {
-        margin-left: 80px;
+        margin-left: 45px;
     }
 }
 
@@ -346,7 +341,9 @@ footer {
 }
 
 body {
-    margin: 2em;
+    margin        : 20px;
+    margin-left   : 30px;
+    /* margin-top : 30px; */
 }
 
 ul {
@@ -377,6 +374,7 @@ a {
     flex-direction: row;
     gap           : 2em;
     align-items   : center;
+    width         : fit-content;
 }
 
 
@@ -406,27 +404,27 @@ a {
     flex-direction: row;
     gap           : 50px;
     align-items   : center;
-    margin-left   : auto;
+    margin-left   : 505px;
     margin-right  : 70px;
 }
 
 .content-container {
     display       : flex;
     flex-direction: row;
-    gap           : 90px
+    gap           : 70px
 }
 
 .sidebar-container {
     flex-direction: column;
     white-space   : nowrap;
-    gap           : 58px
+    gap           : 10px
 }
 
 .menu {
-    margin-top    : 59px;
+    margin-top    : 45px;
     display       : flex;
     flex-direction: column;
-    gap           : 28px;
+    gap           : 30px;
     align-items   : start;
 }
 
@@ -435,7 +433,7 @@ a {
 }
 
 .sidebar-item:nth-child(3) {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .sidebar-item {
@@ -452,6 +450,7 @@ a {
     display       : flex;
     flex-direction: column;
     align-items   : start;
+    margin-top    : 60px;
 }
 
 .subscriptions-container h2 {
@@ -509,7 +508,7 @@ a {
     flex-direction: row;
     align-items   : center;
     gap           : 20px;
-    margin-top    : 62px;
+    margin-top    : 45px;
 }
 
 .main-content__header img {
@@ -554,14 +553,13 @@ a {
 
 .item-caption span {
     color     : #C2C2C2;
-    font-size : 13px;
+    font-size : 16px;
     margin-top: 4px;
 }
 
 .recomended {
     display       : flex;
     flex-direction: column;
-    margin-top    : 50px;
 }
 
 .recomended h2 {
@@ -577,8 +575,8 @@ a {
 .food {
     display       : flex;
     flex-direction: column;
-    margin-top    : 50px;
-    gap           : 30px;
+    margin-top    : 40px;
+    gap           : 25px;
 }
 
 .food-header {
@@ -598,8 +596,14 @@ a {
 
 .food-line {
     display    : flex;
-    gap        : 40px;
+    gap        : 15px;
     white-space: nowrap;
+
+}
+
+.food-line img {
+    width : 250px;
+    height: 150px;
 }
 
 .arrows__subbtn {
@@ -623,7 +627,7 @@ a {
 
 .channel-header {
     font-weight: 700;
-    margin-top : 30px;
+    margin-top : 10px;
     display    : flex;
     gap        : 15px;
 }
@@ -651,6 +655,7 @@ a {
     display       : flex;
     flex-direction: row;
     align-items   : start;
+    margin-right  : 35px;
     gap           : 23px;
 }
 
@@ -699,7 +704,7 @@ a {
 }
 
 .video-caption span {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size : 16px;
     color     : #C2C2C2;
 }
@@ -748,24 +753,26 @@ a {
     align-items   : center;
     gap           : 20px;
     margin-top    : 60px;
-    font-size     : 26px;
+    font-size     : 18px;
 }
 
 .video-line {
     margin-top : 30px;
     display    : flex;
-    gap        : 40px;
+    gap        : 10px;
     white-space: nowrap;
 }
 
 .video-line img {
     border-radius: 14px;
+    width        : 250px;
+    height       : 150px;
 }
 
 /*------------------------------------------------PLAYER------------------------------------------------*/
 .video {
     margin-top      : 30px;
-    margin-left     : 80px;
+    margin-left     : 45px;
     margin-right    : 40px;
     background-image: url("../assets/img/player.png");
     height          : 700px;
@@ -776,9 +783,9 @@ a {
 }
 
 .player-container {
-    margin-top: 30px;
-    display   : flex;
-    gap       : 40px;
+    /* margin-top: 10px; */
+    display: flex;
+    gap    : 10px;
 }
 
 .player-nav {
@@ -808,7 +815,7 @@ a {
     flex-direction : row;
     align-items    : center;
     justify-content: space-between;
-    margin-bottom  : 40px;
+    margin-bottom  : 35px;
     padding-left   : 10px;
     padding-right  : 10px;
 }
@@ -816,14 +823,14 @@ a {
 .buttons__right {
     display       : flex;
     flex-direction: row;
-    gap           : 40px;
+    gap           : 24px;
     align-items   : center;
 }
 
 .buttons__left {
     display       : flex;
     flex-direction: row;
-    gap           : 40px;
+    gap           : 45px;
     align-items   : center;
 }
 
@@ -864,7 +871,7 @@ a {
     display            : flex;
     flex-direction     : row;
     align-items        : center;
-    gap                : 8px;
+    gap                : 10px;
     padding            : 10px;
     background-color   : #EBEBEB;
     border-radius      : 20px;
@@ -873,14 +880,15 @@ a {
 }
 
 .button-item span {
-    opacity: 1;
-    color  : black;
+    opacity  : 1;
+    font-size: 14px;
+    color    : black;
 }
 
 .description-container {
     max-width     : 1363px;
-    margin-top    : 40px;
-    margin-left   : 80px;
+    margin-top    : 30px;
+    margin-left   : 45px;
     flex-direction: row;
     align-items   : start;
     gap           : 12px;
@@ -918,18 +926,19 @@ a {
 }
 
 .sub-btn {
-    font-size       : 16px;
-    margin-right    : 40px;
-    border-radius   : 20px;
-    background-color: #FF0000;
-    color           : white;
-    padding         : 10px 20px 10px 20px;
-    margin-left     : auto;
+    font-size          : 16px;
+    /* margin-right    : 40px; */
+    border-radius      : 20px;
+    background-color   : #FF0000;
+    color              : white;
+    padding            : 10px 20px 10px 20px;
+    margin-left        : auto;
 }
 
 .next-video__header {
     justify-content: space-between;
     align-items    : center;
+    display        : flex;
     margin-bottom  : 20px;
 }
 
@@ -944,8 +953,7 @@ a {
 .next-video__header h1 {
     font-size  : 36px;
     line-height: 45px;
-
-    color: #19202C;
+    color      : #19202C;
 }
 
 .next-video__header div {
@@ -957,10 +965,10 @@ a {
 
 .next-videos {
     margin-right  : 70px;
-    margin-top    : 20px;
+    margin-top    : 30px;
     display       : flex;
     flex-direction: column;
-    gap           : 25px;
+    gap           : 20px;
 }
 
 .next-item {
@@ -970,9 +978,11 @@ a {
 
 .next-item img {
     border-radius: 16px;
+    width        : 367px;
+    height       : 213px;
 }
 
 .next-item h3 {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size : 26px;
 }
