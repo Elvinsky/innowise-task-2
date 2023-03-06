@@ -177,9 +177,10 @@
     }
 
     .mob-video svg {
-        margin-top  : auto;
-        margin-left : auto;
-        margin-right: auto
+        margin-top   : auto;
+        margin-left  : auto;
+        margin-right : auto;
+        margin-bottom: 8px;
     }
 
     .player-caption {
@@ -200,6 +201,11 @@
 
     .player-caption {
         align-items: start;
+    }
+
+    .next-videos {
+        align-items : flex-start;
+        margin-right: 16px;
     }
 }
 
@@ -320,6 +326,9 @@
         display: flex;
     }
 
+    .player-caption {
+        margin-left: 80px;
+    }
 }
 
 footer {
@@ -819,12 +828,11 @@ a {
 }
 
 .player-caption {
-    display          : flex;
-    margin-top       : 20px;
-    flex-direction   : column;
-    gap              : 15px;
-    max-width        : 1363px;
-    /* margin-left   : 80px; */
+    display       : flex;
+    margin-top    : 20px;
+    flex-direction: column;
+    gap           : 15px;
+    max-width     : 1363px;
 
     border-bottom-color: #D8D8D880;
     border-bottom-width: 1px;
